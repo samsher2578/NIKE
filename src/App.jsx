@@ -1,12 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import PopularProduct from "./components/PopularProduct";
-import SuperQuality from "./components/SuperQuality";
-import Services from "./components/Services";
-import SpacialOffer from "./components/SpacialOffer";
-import CustomerReviews from "./components/CustomerReviews";
-import Subscribe from "./components/Subscribe";
-import Footer from "./components/Footer";
+import Navbar from "./component/Navbar";
+import {
+  Hero,
+  PopularProduct,
+  SuperQuality,
+  Services,
+  CustomerReviews,
+  SpacialOffer,
+  Subscribe,
+  Footer,
+} from "./section";
 
 function App() {
   return (
