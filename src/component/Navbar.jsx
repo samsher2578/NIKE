@@ -9,7 +9,7 @@ const Navbar = () => {
         <a href="">
           <img src={headerLogo} alt="Logo" width={130} height={29} />
         </a>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-end items-end gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <a
