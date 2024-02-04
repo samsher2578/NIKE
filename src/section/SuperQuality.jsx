@@ -5,10 +5,10 @@ const SuperQuality = () => {
   return (
     <section
       id="about-us"
-      className="flex justify-between items-center mx-lg:flex-col gap-10 w-full max-container"
+      className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <div className="flex flex-1 flex-col">
-        <h2 className="mt-10 font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
+        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
           we provide you
           <span className="text-coral-red"> Super</span>
           <span className="text-coral-red"> Quality</span> shoes
@@ -25,7 +25,7 @@ const SuperQuality = () => {
           <Button label="View details" />
         </div>
       </div>
-      <div className="flex-1 justify-center items-center">
+      <div className="flex-1 flex  justify-center items-center">
         <img
           src={shoe8}
           alt="shoe8"
