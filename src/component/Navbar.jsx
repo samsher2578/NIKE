@@ -29,26 +29,24 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div onClick={handleNav} className="hidden max-lg:block">
+        <div onClick={handleNav} className="block md:hidden">
           {!isNav ? (
-            <img src={cancel} alt="hamburger" width={23} height={23} />
+            <img src={cancel} alt="close" width={23} height={23} />
           ) : (
-            <img src={menu} alt="hamburger" width={25} height={25} />
+            <img src={menu} alt="menu" width={25} height={25} />
           )}
         </div>
         <div
           className={
             !isNav
-              ? "fixed left-0 top-0 w-3/5 h-full boredr-r border-r-gray-900 bg-Background px-4 ease-in-out duration-500 bg-black "
+              ? "fixed left-0 top-0 w-3/5 h-full bg-black boredr-r border-slate-900 text-slate-gray px-8 ease-in-out duration-500 z-2"
               : "fixed left-[-100%]"
           }
         >
-          <h1 className="w-full text-3xl font-bold text-Primary mt-8">
-            <a href="">
-              <img src={headerLogo} alt="Logo" width={130} height={29} />
-            </a>
+          <h1 className="w-full text-3xl font-bold mt-8">
+            <img src={headerLogo} alt="Logo" width={130} height={29} />
           </h1>
-          <ul className="pt-12 uppercase">
+          <ul className="pt-16 uppercase">
             {navLinks.map((item) => (
               <li
                 key={item.label}
